@@ -1,0 +1,13 @@
+{
+  "name": "Sterling Voice",
+  "short_name": "Sterling",
+  "description": "Talk to Sterling — your AI copilot",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#050505",
+  "background_color": "#050505",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

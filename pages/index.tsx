@@ -47,7 +47,7 @@ export default function Home() {
     if (typeof window === 'undefined') return;
     const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
     const isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent);
-    const isStandalone = window.navigator.standalone === true;
+    const isStandalone = (navigator as any).standalone === true;
     const dismissed = localStorage.getItem('install-prompt-dismissed');
     if (isSafari && isIOS && !isStandalone && !dismissed) {
       const timer = setTimeout(() => setShowInstallPrompt(true), 3000);
